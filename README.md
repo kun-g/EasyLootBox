@@ -25,6 +25,7 @@ mv .env.example .env
 
 ## 创建Bundle
 `node 1-create-bundle-module.js`
+
 创建成功后，会显示Bundle的合约地址。复制合约地址，黏贴到.env文件里面`BUNDLE_ADDRESS=`后面
 
 
@@ -35,6 +36,7 @@ mv .env.example .env
 
 ## 创建卡包
 `node 3-create-pack-module.js`
+
 创建成功后，会显示卡包的合约地址。复制合约地址，黏贴到.env文件里面`PACK_ADDRESS=`后面
 
 
@@ -66,6 +68,7 @@ mv .env.example .env
 ![image.png](https://cdn.steemitimages.com/DQmRnTDSnGp1a9fCykvCdhQG6xisrEeuAxijy9gpEK6Yawm/image.png)
 
 当然，也有偷懒的方法：
+
 `node 7-submit.js`
 
 我上面写的是快速获得奖励的方法，如果你对创建NFT卡包有兴趣，强力推荐阅读整篇教程，写的挺不错的。
