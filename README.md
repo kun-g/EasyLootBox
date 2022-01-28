@@ -7,27 +7,21 @@ Pointer给的教程很详细: https://www.pointer.gg/tutorials/thirdweb-nft-loot
 
 ## 设置
 ~~~
-git clone https://github.com/ericet/EasyLootBox
+git clone https://github.com/kun-g/EasyLootBox
 cd EasyLootBox
 npm install
 mv .env.example .env
 ~~~
 添加钱包的私钥到.env文件里面的`WALLET_PRIVATE_KEY=`后面
 
-## 获得测试币
-水龙头网站获取MATIC和LINK测试币: https://faucet.polygon.technology/
+## 初始化
+`node 0-prepare-account.js`
 
-## 创建项目
-登陆thirdweb网站创建一个新项目: https://thirdweb.com/dashboard
+执行成功后，会显示Token、User ID、Procject Address，分配复制粘贴到TOKEN、USER_ID、THIRDWEB_PROJECT后面
 
-![image.png](https://cdn.steemitimages.com/DQmXmJhgCEXMFUvXhEwEXQzTpUHEjyDuxqxN9Nt6b4D39rD/image.png)
+不放心的话，可以去[Dashboard](https://thirdweb.com/dashboard) 看是否有Project，有的话就成功了。
 
-
-![image.png](https://cdn.steemitimages.com/DQmWG2yZToPzNgh9Xdmeuo5vq4gxHxv4KTN6QQZz8AexQLx/image.png)
-
-创建成功后，复制项目地址黏贴到.env文件里面`THIRDWEB_PROJECT=` 后面
-
-![image.png](https://cdn.steemitimages.com/DQmXymdYwESD27mqcEjeBEpTM8kfqVC9rJ62aT2FmA9WvAc/image.png)
+![Projcet List](./assets/0-ProjectList.png)
 
 ## 创建Bundle
 `node 1-create-bundle-module.js`
@@ -55,6 +49,7 @@ mv .env.example .env
 ## 开包
 `node 6-open-pack.js`
 
+
 开到特斯拉~
 
 ![image.png](https://cdn.steemitimages.com/DQmQM2Vwkxj9XgdtbUcr51kr99t7EzbJFhmMSzPGT4gGCvU/image.png)
@@ -69,5 +64,8 @@ mv .env.example .env
 登陆后，拉到最下面，填入你的Pack的合约地址(就是.env文件里面PACK_ADDRESS那个)，点击验证就完成了~ 奖励5 MATIC和一个NFT。
 
 ![image.png](https://cdn.steemitimages.com/DQmRnTDSnGp1a9fCykvCdhQG6xisrEeuAxijy9gpEK6Yawm/image.png)
+
+当然，也有偷懒的方法：
+`node 7-submit.js`
 
 我上面写的是快速获得奖励的方法，如果你对创建NFT卡包有兴趣，强力推荐阅读整篇教程，写的挺不错的。

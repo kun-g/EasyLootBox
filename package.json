@@ -1,7 +1,7 @@
 {
   "name": "lootbox",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@3rdweb/sdk": "^1.37.0",
+    "axios": "^0.25.0",
     "dotenv": "^14.3.2",
     "ethers": "^5.5.3"
   }
